@@ -468,3 +468,69 @@ Blockly.Blocks['operator_mathop'] = {
     });
   }
 };
+
+Blockly.Blocks['operator_mathSquare'] = {
+  /**
+   * Block for finding square of a numbers.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "square of %n",
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "NUM"
+        }
+      ],
+      "category": Blockly.Categories.operators,
+      "extensions": ["colours_operators", "output_number"]
+    });
+  }
+};
+
+Blockly.Blocks['operator_mathSquareRoot'] = {
+  /**
+   * Block for finding square root of a numbers.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": 'square root of %n',
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "NUM"
+        }
+      ],
+      "category": Blockly.Categories.operators,
+      "extensions": ["colours_operators", "output_number"]
+    });
+  }
+};
+
+
+// Blockly.Blocks['math_square_suqareroot'] = {
+//   /**
+//    * Block for finding square and square root of a numbers.
+//    * @this Blockly.Block
+//    */
+//   init: function() {
+//     this.jsonInit({
+//       "message0": Blockly.Msg.MATH_SQUARE_SQUAREROOT,
+//       "args0": [
+//         {
+//           opcode: 'math_square',
+//           type: 'operator',
+//         },
+//         {
+//           opcode: 'math_square_root',
+//           type: 'operator',
+          
+//         },
+//       ],
+//       "category": Blockly.Categories.operators,
+//       "extensions": ["colours_operators", "output_number"]
+//     });
+//   }
+// };
